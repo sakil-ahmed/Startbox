@@ -1,0 +1,37 @@
+.brand-section {
+    padding: 120px 0 130px 0;
+    position: relative;
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 15px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 20px;
+        justify-content: center;
+        .brand-item {
+            min-width: 180px;
+            min-height: 130px;
+            border-radius: 10px;
+            background-color: #F5F5F7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 150ms linear;
+            &:hover {
+                transform: translate3d(0, -2px, 0);
+            }
+        }
+        .img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            bottom: 86px;
+            right: 142px;
+            z-index: -2;
+        }
+    }
+}

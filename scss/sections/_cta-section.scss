@@ -1,0 +1,41 @@
+.cta-section {
+    padding: 70px 0;
+    //background-color: $bs-purple;
+    background: linear-gradient(rgba(83, 46, 162, 0.9), rgba(83, 46, 162, 0.9)), url(../../img/call-to-action.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cta-heading {
+        font-size: 2.125em;
+        line-height: 1.4;
+        color: $bs-white;
+        width: 33.33333333%;
+    }
+    .cta-contacts {
+        display: flex;
+        align-items: center;
+        column-gap: 130px;
+        .cta-mail {
+            .number-mail {
+                a {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: $bs-white;
+                    padding-left: 15px;
+                }
+                i {
+                    color: $bs-white;
+                    font-size: 15px;
+                }
+            }
+            .number {
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

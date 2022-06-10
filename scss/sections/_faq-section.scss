@@ -1,0 +1,93 @@
+.faq {
+    padding-bottom: 130px;
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .faq-heading {
+        font-size: 2.5em;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 120px;
+    }
+    .question {
+        width: 85%;
+        margin: 0 auto;
+        border: 1px solid rgba(177, 177, 180, 0.3);
+        border-radius: 13px;
+        margin-bottom: 20px;
+        .question-btn {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 35px 70px;
+            background: transparent;
+            border: none;
+            outline: none;
+            transition: all .150ms linear;
+            cursor: pointer;
+            span {
+                font-size: 1.25em;
+                line-height: 1.5;
+                font-weight: 700;
+                transition: all .300ms linear;
+            }
+            i {
+                font-size: 25px;
+                transition: all .300ms linear;
+            }
+        }
+        .faq-ans {
+            padding: 0 70px;
+            max-height: 0;
+            overflow: hidden;
+            will-change: max-height;
+            transition: all 0.3s ease-out;
+            color: #000000;
+            z-index: 1;
+            .ans {
+                font-size: 1.0625em;
+                margin-bottom: 30px;
+            }
+            .faq-a {
+                font-weight: 700;
+                color: $bs-pink;
+                text-decoration: none;
+                position: relative;
+                padding-bottom: 2px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: currentColor;
+                    border-radius: 2px;
+                    transition: 0.3s ease-in-out;
+                }
+                &:hover::after {
+                    width: 0;
+                    right: 0;
+                }
+            }
+        }
+        .btn-color {
+            span {
+                color: $bs-pink;
+            }
+            i {
+                transform: rotate(180deg);
+                opacity: 0.5;
+            }
+        }
+        .active {
+            padding: 0 70px;
+            max-height: 191px;
+            margin-bottom: 30px;
+        }
+    }
+}

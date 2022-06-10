@@ -1,0 +1,89 @@
+.services {
+    padding: 120px 0 130px;
+    .service-heading {
+        text-align: center;
+        font-size: 2.125em;
+        line-height: 1.4;
+        color: $bs-dark;
+        margin-bottom: 80px;
+        span {
+            position: relative;
+            z-index: 1;
+            &::after {
+                content: "";
+                position: absolute;
+                top: calc(100% - 7.5px);
+                right: 0;
+                left: 0;
+                height: 15px;
+                background-image: url(../../img/shbg.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: -1;
+            }
+        }
+    }
+    .service-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+        column-gap: 30px;
+        margin-bottom: 70px;
+        .service-card {
+            max-height: 200px;
+            background-color: $bs-light;
+            max-width: 570px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: all 150ms linear;
+            &:hover {
+                transform: translate3d(0, -15px, 0);
+                img {
+                    transform: scale(1.1);
+                    overflow-y: hidden;
+                }
+                a {
+                    color: $bs-pink;
+                }
+            }
+            .service-card-img {
+                overflow: hidden;
+                max-width: 200px;
+                img {
+                    position: relative;
+                    display: block;
+                    height: fit-content;
+                    overflow: hidden;
+                    transition: all 150ms linear;
+                }
+            }
+            .service-card-body {
+                padding: 25px 50px 25px 50px;
+                .card-body-heading {
+                    font-size: 1.25em;
+                    margin-bottom: 15px;
+                    line-height: 1.5;
+                }
+                .card-body-desc {
+                    font-size: 1em;
+                }
+                a {
+                    color: $bs-dark;
+                    i {
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+    .services-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,24 @@
+@import "base/reset";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+// sections
+@import "sections/header";
+@import "sections/hero";
+@import "sections/popup";
+@import "sections/icon-list";
+@import "sections/services";
+@import "sections/cta-section";
+@import "sections/aboutus";
+@import "sections/our-info";
+@import "sections/growth";
+@import "sections/our-industries";
+@import "sections/popup";
+@import "sections/brand";
+@import "sections/faq-section";
+@import "sections/blog-section";
+@import "sections/footer";
+::selection {
+    color: #FFFFFF;
+    background-color: #F01F4B;
+}

@@ -1,0 +1,21 @@
+.icon-list {
+    padding: 40px 0;
+    background-color: $bs-dark;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 30px;
+        .icon {
+            display: flex;
+            align-items: center;
+            column-gap: 45px;
+            .icon-text {
+                font-size: 1.25em;
+                line-height: 1.5;
+                color: $bs-white;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.our-industries {
+    padding: 120px 0 130px 0;
+    .top {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 90px;
+        .top-heading {
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+        .top-para {
+            font-size: 1.0625em;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        .card {
+            width: 31.33333333%;
+            border: 1px solid rgba(177, 177, 180, 0.3);
+            border-radius: 14px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            transition: all 150ms linear;
+            &:hover {
+                transform: translate3d(0, -15px, 0);
+                background-color: #F5F5F7;
+                border-color: #F5F5F7;
+            }
+            .card-img {
+                img {
+                    color: $bs-pink;
+                }
+            }
+            .card-para {
+                font-size: 1.25em;
+                line-height: 1.5;
+                margin-left: 40px;
+                font-weight: 700;
+            }
+        }
+    }
+    .contact-industries {
+        width: 100%;
+        text-align: center;
+        .contact-btn {
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+    }
+}

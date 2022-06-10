@@ -1,0 +1,27 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: #fff;
+    background-color: #F01F4B;
+    border: none;
+    outline: none;
+    padding: 15px 40px;
+    font-size: 1rem;
+    border-radius: 50rem;
+    transition: all 150ms linear;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}

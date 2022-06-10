@@ -1,0 +1,47 @@
+.our-info {
+    padding: 110px 0 120px 0;
+    background: linear-gradient(rgba(221, 37, 76, 0.9), rgba(221, 37, 76, 0.9)), url(../../img/numbers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .row {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.projects {
+    width: 25%;
+}
+
+.exeperience {
+    width: 25%;
+}
+
+.savings {
+    width: 25%;
+}
+
+.email-leads {
+    width: 25%;
+}
+
+.info-heading {
+    font-size: 3.125em;
+    line-height: 1.2;
+    color: $bs-white;
+}
+
+.info-tittle {
+    font-size: 1em;
+    font-weight: 700;
+    color: $bs-white;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.info-para {
+    font-size: 0.9375em;
+    color: $bs-white;
+    font-weight: 500;
+}

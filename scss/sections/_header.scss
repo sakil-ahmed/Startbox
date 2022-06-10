@@ -1,0 +1,132 @@
+.bg-header {
+    background-color: #000;
+    transition: .3s linear ease-in-out;
+}
+
+.header {
+    box-shadow: inset 0 -1px rgb(255 255 255 / 20%);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    min-height: 78px;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-right {
+        display: flex;
+        column-gap: 60px;
+        align-items: center;
+    }
+    .brand {
+        img {
+            cursor: pointer;
+        }
+    }
+    // header social icons
+    .header-social-icons {
+        a {
+            font-size: 14px;
+            padding: 3px;
+            &:hover {
+                i {
+                    color: $bs-gray-400;
+                }
+            }
+        }
+        i {
+            color: $bs-white;
+            transition: 0.3s ease-in-out;
+        }
+    }
+    // navbar 
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            list-style: none;
+            padding: 26px 20px;
+            position: relative;
+            a {
+                text-decoration: none;
+                color: $bs-white;
+                font-weight: 600;
+            }
+            ul {
+                display: none;
+            }
+            &:hover {
+                ul {
+                    display: block;
+                    position: absolute;
+                    margin-left: -40px;
+                    background-color: $bs-white;
+                    width: 250px;
+                    margin-top: 26px;
+                    border-radius: 10px;
+                    padding: 20px 30px;
+                    li {
+                        padding: 5px !important;
+                        a {
+                            color: $bs-gray-600;
+                            transition: 0.3s;
+                            font-size: 14px;
+                            &:hover {
+                                color: $bs-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // toggler button
+    .toggle-btn {
+        width: 25px;
+        height: 25px;
+        color: $bs-white;
+        overflow: hidden;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        cursor: pointer;
+        display: none;
+        &:hover {
+            span:nth-child(2) {
+                width: 100%;
+            }
+        }
+        span {
+            width: 25px;
+            height: 2px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-color: $bs-white;
+            &:nth-child(2) {
+                width: 50%;
+                transition: 0.3s;
+            }
+        }
+    }
+    .close-toggle {
+        span {
+            &:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+// responsive
+@media (max-width:991px) {
+    .toggle-btn {
+        display: block;
+    }
+}
